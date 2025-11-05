@@ -8,6 +8,7 @@ if(!isset($_SESSION['author_id'])){
     header('location: ../../authentication/login.php');
 }
 
+// For Page active system  <<< by  "$explode"  we can get the URL, and with the "end()" function we can get the last slug of the whole URL >>>
 $id = $_SESSION['author_id'];
 $explode = explode("/", $_SERVER['PHP_SELF']);
 $extention = end($explode);
